@@ -109,7 +109,7 @@ def simulated_annealing(nodes,it,k,j,T,alpha):
     '''
     for i in range(it):
         '''
-        Neighboor generation
+        Neighbor generation
         '''
         for i in range(int(k/3)):
             '''Neighbors generation'''
