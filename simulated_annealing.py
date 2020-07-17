@@ -132,14 +132,14 @@ def simulated_annealing(nodes,it,k,j,T,alpha):
                 current_sol = n1
                 current_best_distance = n1_dist
 
-            if n2_dist < current_best_distance:
+            elif n2_dist < current_best_distance:
                 current_sol = n2
                 current_best_distance = n2_dist
             elif np.random.uniform(0,1) < np.exp(-(abs(n2_dist - current_best_distance))/T):
                 current_sol = n2
                 current_best_distance = n2_dist
 
-            if n3_dist < current_best_distance:
+            elif n3_dist < current_best_distance:
                 current_sol = n3
                 current_best_distance = n3_dist
             elif np.random.uniform(0,1) < np.exp(-(abs(n3_dist - current_best_distance))/T):
