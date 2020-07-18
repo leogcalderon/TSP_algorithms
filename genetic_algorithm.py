@@ -49,7 +49,7 @@ class chromosome:
         mutated[idx2] = self.route[idx1]
 
         self.route = mutated
-        self.fitness = self.calculate_fitness(self.route,self.cities)
+        self.calculate_fitness(self.route,self.cities)
 
 
     def generate_random_route(self):
